@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --app-color-primary: rgba(254, 189, 97, 0.7);
+  --app-color-secondary: #d77ed0;
+  --app-color-tertiary: #5c9e8d;
+  --app-color-card: #6cb78e;
+  --app-color-white: #ffffff;
+  --app-color-black: #000000;
+  --app-color-warn: #f44336;
+  --app-color-success: #00d473;
+  --app-color-gold: #ffc317;
+}
+
+* {
+  font-family: "Balsamiq Sans", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("./assets/background/banner.jpg");
+  object-fit: cover;
+}
+
+.logo {
+  width: 15%;
+  margin: 1% auto;
+  transition-duration: 0.3s;
+}
+
+.container_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+}
+
+.mdc-text-field--outlined {
+  background-color: var(--app-color-white) !important;
+  color: var(--app-color-black);
+}
+
+.mat-mdc-progress-spinner .mdc-circular-progress__determinate-circle,
+.mat-mdc-progress-spinner .mdc-circular-progress__indeterminate-circle-graphic {
+  stroke: var(--app-color-black) !important;
+}
+
+.mdc-checkbox
+  .mdc-checkbox__native-control:enabled:checked
+  ~ .mdc-checkbox__background,
+.mdc-checkbox
+  .mdc-checkbox__native-control:enabled:indeterminate
+  ~ .mdc-checkbox__background,
+.mdc-checkbox
+  .mdc-checkbox__native-control[data-indeterminate="true"]:enabled
+  ~ .mdc-checkbox__background {
+  background-color: var(--app-color-black) !important;
+  border-color: var(--app-color-black) !important;
+}
+
+html .mat-mdc-mini-fab.mat-accent {
+  --mdc-fab-small-container-color: var(--app-color-secondary) !important;
+}

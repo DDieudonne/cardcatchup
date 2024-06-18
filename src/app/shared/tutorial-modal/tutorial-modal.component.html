@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>Règles du jeu</h2>
+<mat-dialog-content>
+    <p> Tu as <strong>2 minutes</strong> chrono pour trouver le maximum de paire de cartes possible, clique sur le
+        bouton <strong>c'est parti!</strong>
+        quand tu es prêt(e).</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close>Annuler</button>
+    <button mat-button mat-raised-close cdkFocusInitial (click)="close()" class="start">C'est parti!</button>
+</mat-dialog-actions>
